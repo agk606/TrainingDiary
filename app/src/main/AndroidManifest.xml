@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.hfad.trainingdairy">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <activity android:name=".StartScreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".TrainingPlans"
+            android:label="@string/training_plans"
+            android:parentActivityName=".StartScreen">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".StartScreen"/>
+        </activity>
+
+        <activity android:name=".TrainingActivity"
+            android:label="@string/training_activity"
+            android:parentActivityName=".TrainingPlans">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".TrainingPlans"/>
+        </activity>
+
+        <activity android:name=".CreateTraining"
+            android:label="@string/create_training"
+            android:parentActivityName=".TrainingPlans">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".TrainingPlans"/>
+        </activity>
+
+        <activity android:name=".CreateActivity"
+            android:label="@string/create_activity"
+            android:parentActivityName=".TrainingActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".TrainingActivity"/>
+        </activity>
+
+    </application>
+
+</manifest>

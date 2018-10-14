@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Тренировочный дневник</string>
+    <string name="training_plans">Когда тренировались</string>
+    <string name="training_activity">Вот такая тренировка</string>
+    <string name="create_training">Создай тренировку</string>
+    <string name="create_activity">Что делали</string>
+
+    <string name="trainings">Тренировки</string>
+    <string name="title_activity_training">Training</string>
+    <string name="input_date">Введите дату:</string>
+    <string name="save">СОХРАНИТЬ</string>
+    <string name="input_exercise">Упражнение</string>
+    <string name="input_sets_reps">Подходы*Повторы</string>
+
+    <string name="action_send">Отправить</string>
+</resources>
